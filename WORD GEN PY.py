@@ -13,8 +13,15 @@ resultlbl=Label(root)
 resultlbl.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 def find():
-    r=random.random(0,26)
-    lucky=letters[r]
+    r1=random.randint(0,25)
+    r2=random.randint(0,25)
+    r3=random.randint(0,25)
+    r4=random.randint(0,25)
+    r5=random.randint(0,25)
+    
+    
+    
+    lucky=letters[r1]+letters[r2]+letters[r3]+letters[r4]+letters[r5]
     print(lucky)
     resultlbl["text"]=lucky
 
